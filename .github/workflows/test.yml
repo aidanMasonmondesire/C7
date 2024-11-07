@@ -26,7 +26,7 @@ jobs:
       - name: Run tests
         run: pytest --cov=app test_app.py  # Run tests with coverage
 
-- name: Upload coverage to Codecov
-  uses: codecov/codecov-action@v2
-  with:
-    token: ${{ secrets.eb56fda8-0c3d-4097-a973-a8d058819dce }}
+      - name: Upload coverage to Codecov
+        uses: codecov/codecov-action@v2
+        with:
+          token: ${{ secrets.eb56fda8-0c3d-4097-a973-a8d058819dce }}
